@@ -1,0 +1,35 @@
+{
+  "name": "2020-fm-fylo-dark-theme-landing-page",
+  "version": "1.0.0",
+  "description": "My implementation of Frontend Mentor's \"Fylo Dark Theme Landing Page\" challenge.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dgdev1024/2020-fm-fylo-dark-theme-landing-page.git"
+  },
+  "keywords": [
+    "frontend",
+    "mentor",
+    "fylo",
+    "dark",
+    "theme",
+    "landing",
+    "page"
+  ],
+  "author": "Dennis Griffin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dgdev1024/2020-fm-fylo-dark-theme-landing-page/issues"
+  },
+  "homepage": "https://github.com/dgdev1024/2020-fm-fylo-dark-theme-landing-page#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4"
+  },
+  "dependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  }
+}
