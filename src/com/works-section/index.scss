@@ -9,6 +9,7 @@
     grid-template-columns: 1fr;
     gap: 32px;
     align-items: center;
+    padding: 64px 0px;
 
     @media #{$screen-medium} {
       grid-template-columns: 1fr 1fr;
