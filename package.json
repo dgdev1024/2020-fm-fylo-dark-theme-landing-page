@@ -4,7 +4,8 @@
   "description": "My implementation of Frontend Mentor's \"Fylo Dark Theme Landing Page\" challenge.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "parcel src/index.html",
+    "build": "parcel build src/index.html"
   },
   "repository": {
     "type": "git",
@@ -26,7 +27,8 @@
   },
   "homepage": "https://github.com/dgdev1024/2020-fm-fylo-dark-theme-landing-page#readme",
   "devDependencies": {
-    "parcel-bundler": "^1.12.4"
+    "parcel-bundler": "^1.12.4",
+    "sass": "^1.26.8"
   },
   "dependencies": {
     "react": "^16.13.1",

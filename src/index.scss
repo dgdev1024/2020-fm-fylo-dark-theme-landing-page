@@ -1,0 +1,81 @@
+@import "./global.scss";
+
+// CSS Reset
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: $font-family-normal;
+  font-size: $font-size-normal;
+  font-weight: $font-weight-normal;
+}
+
+// Containers
+.fm-container {
+  width: 95%;
+  margin: 0px auto;
+
+  @media #{$screen-small} {
+    width: 90%;
+  }
+  @media #{$screen-medium} {
+    width: 85%;
+  }
+  @media #{$screen-large} {
+    width: 80%;
+  }
+  @media #{$screen-extra-large} {
+    width: 75%;
+  }
+}
+
+// Headings
+h1,
+h2 {
+  font-family: $font-family-heading;
+  font-weight: $font-weight-bold;
+}
+
+h1 {
+  font-size: 1.8em;
+
+  @media #{$screen-medium} {
+    font-size: 2em;
+  }
+}
+
+h2 {
+  font-size: 1.6em;
+
+  @media #{$screen-medium} {
+    font-size: 1.8em;
+  }
+}
+
+// Call-To-Action Buttons
+.fm-call-to-action {
+  display: block;
+  width: 100%;
+  max-width: 240px;
+  margin: 0px auto;
+  padding: 12px 0px;
+  background-image: linear-gradient(
+    to right,
+    $color-gradient-start,
+    $color-gradient-end
+  );
+  color: $color-white;
+  font-family: $font-family-heading;
+  font-size: 0.9em;
+  font-weight: $font-weight-bold;
+  border: none;
+  border-radius: 32px;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}

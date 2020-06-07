@@ -1,0 +1,101 @@
+@import "../../global.scss";
+
+header {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 64px;
+  background-color: $color-header;
+  transition-property: background-color;
+  transition-duration: $time-transition;
+
+  @media #{$screen-small} {
+    height: 72px;
+  }
+
+  @media #{$screen-medium} {
+    height: 80px;
+  }
+
+  @media #{$screen-large} {
+    height: 88px;
+  }
+
+  .fm-container {
+    height: 100%;
+    display: grid;
+    grid-template-columns: auto 1fr;
+
+    .fm-logo {
+      $logo-scale-to-height: 3.384615385;
+      $logo-height: 32px;
+
+      align-self: center;
+      justify-self: start;
+      position: relative;
+      height: $logo-height;
+      width: $logo-height * $logo-scale-to-height;
+
+      svg {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+
+        path {
+          fill: black;
+          transition: $time-transition;
+        }
+      }
+    }
+
+    nav {
+      align-self: center;
+      justify-self: end;
+
+      a {
+        display: inline-block;
+        margin: 0px 4px;
+        font-family: $font-family-heading;
+        text-decoration: none;
+        color: $color-text;
+        transition: $time-transition;
+
+        @media #{$screen-small} {
+          margin: 0px 6px;
+        }
+        @media #{$screen-medium} {
+          margin: 0px 8px;
+        }
+        @media #{$screen-large} {
+          margin: 0px 10px;
+        }
+        @media #{$screen-extra-large} {
+          margin: 0px 12px;
+        }
+
+        &:first-child {
+          margin-left: 0px;
+        }
+        &:last-child {
+          margin-right: 0px;
+          font-weight: $font-weight-bold;
+        }
+      }
+    }
+  }
+}
+
+main.dark header {
+  background-color: $color-header-dark;
+
+  .fm-logo svg path {
+    fill: white;
+  }
+
+  nav a {
+    color: $color-text-dark;
+  }
+}
