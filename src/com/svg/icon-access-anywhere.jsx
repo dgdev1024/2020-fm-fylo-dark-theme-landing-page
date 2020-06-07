@@ -14,6 +14,7 @@ function SvgIconAccessAnywhere(props) {
         />
         <g transform="translate(55.377 23.07)" stroke="#62E0D9">
           <rect
+            className="phone"
             strokeWidth={1.641}
             fill="#181F2B"
             x={0.821}

@@ -32,7 +32,11 @@ function SvgIconArrow(props) {
             filter="url(#icon-arrow_svg__a)"
             xlinkHref="#icon-arrow_svg__b"
           />
-          <use fill="#62E0D9" xlinkHref="#icon-arrow_svg__b" />
+          <use
+            className="circle"
+            fill="#62E0D9"
+            xlinkHref="#icon-arrow_svg__b"
+          />
         </g>
         <path
           d="M8.582 6l-.363.35 1.452 1.4H5.333v.5h4.338L8.22 9.65l.363.35 2.074-2z"

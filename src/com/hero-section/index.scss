@@ -1,0 +1,47 @@
+@import "../../global.scss";
+
+.fm-hero-section {
+  background-color: $color-intro;
+  background-image: url("../../img/bg-curvy-mobile-light.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom center;
+  transition: $time-transition;
+
+  @media #{$screen-medium} {
+    background-image: url("../../img/bg-curvy-desktop-light.svg");
+  }
+
+  .fm-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    max-width: 600px;
+    padding-top: 88px;
+
+    img {
+      display: block;
+      width: 80%;
+      margin: 0px auto;
+    }
+
+    h1 {
+      padding-top: 48px;
+    }
+
+    .fm-call-to-action {
+      margin-bottom: 64px;
+    }
+  }
+}
+
+main.dark .fm-hero-section {
+  background-color: $color-intro-dark;
+  background-image: url("../../img/bg-curvy-mobile.svg");
+
+  @media #{$screen-medium} {
+    background-image: url("../../img/bg-curvy-desktop.svg");
+  }
+}

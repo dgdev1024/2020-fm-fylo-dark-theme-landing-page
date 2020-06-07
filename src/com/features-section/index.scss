@@ -1,0 +1,46 @@
+@import "../../global.scss";
+
+.fm-features-section {
+  background-color: $color-main;
+  transition: $time-transition;
+
+  .fm-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+    padding: 32px 0px;
+
+    @media #{$screen-medium} {
+      grid-template-columns: 1fr 1fr;
+      gap: 32px;
+    }
+
+    .fm-feature-card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      svg {
+        margin: 32px 0px;
+
+        .phone {
+          fill: $color-main;
+          transition: $time-transition;
+        }
+      }
+    }
+  }
+}
+
+main.dark .fm-features-section {
+  background-color: $color-main-dark;
+
+  .fm-feature-card {
+    svg {
+      .phone {
+        fill: $color-main-dark;
+      }
+    }
+  }
+}

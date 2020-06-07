@@ -1,0 +1,48 @@
+@import "../../global.scss";
+
+.fm-testimonial {
+  padding: 24px;
+  background-color: $color-testimonial;
+  transition: $time-transition;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  p {
+    padding: 0px;
+    text-align: left;
+    line-height: 1.8em;
+  }
+
+  .fm-author {
+    padding-top: 24px;
+    display: grid;
+    grid-template-columns: 48px auto;
+
+    img {
+      display: block;
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+    }
+
+    p {
+      margin-left: 8px;
+      padding: 0px;
+      text-align: left;
+      font-size: 0.8em;
+      align-self: center;
+
+      strong {
+        display: inline-block;
+        margin-bottom: 4px;
+        font-weight: $font-weight-bold;
+        font-size: 1.3em;
+      }
+    }
+  }
+}
+
+main.dark .fm-testimonial {
+  background-color: $color-testimonial-dark;
+}

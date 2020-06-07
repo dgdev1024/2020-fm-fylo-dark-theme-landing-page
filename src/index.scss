@@ -10,14 +10,19 @@
   font-weight: $font-weight-normal;
 }
 
+main {
+  background-color: $color-main;
+}
+
+main.dark {
+  background-color: $color-main-dark;
+}
+
 // Containers
 .fm-container {
-  width: 95%;
+  width: 90%;
   margin: 0px auto;
 
-  @media #{$screen-small} {
-    width: 90%;
-  }
   @media #{$screen-medium} {
     width: 85%;
   }
@@ -34,6 +39,7 @@ h1,
 h2 {
   font-family: $font-family-heading;
   font-weight: $font-weight-bold;
+  line-height: 1.5em;
 }
 
 h1 {
@@ -50,6 +56,12 @@ h2 {
   @media #{$screen-medium} {
     font-size: 1.8em;
   }
+}
+
+// Paragraphs
+p {
+  padding: 20px 0px;
+  line-height: 1.5em;
 }
 
 // Call-To-Action Buttons
@@ -77,5 +89,22 @@ h2 {
 
   &:focus {
     outline: none;
+  }
+}
+
+// Text Color
+h1,
+h2,
+p {
+  color: $color-text;
+  transition: $time-transition;
+  text-align: center;
+}
+
+main.dark {
+  h1,
+  h2,
+  p {
+    color: $color-text-dark;
   }
 }

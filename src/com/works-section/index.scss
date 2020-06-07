@@ -1,0 +1,77 @@
+@import "../../global.scss";
+
+.fm-works-section {
+  background-color: $color-main;
+  transition: $time-transition;
+
+  .fm-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 32px;
+    align-items: center;
+
+    @media #{$screen-medium} {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    img {
+      display: block;
+      width: 80%;
+      max-width: 600px;
+      margin: 0px auto;
+
+      @media #{$screen-medium} {
+        width: 100%;
+        margin: 0px;
+      }
+    }
+
+    .fm-caption {
+      h2,
+      p {
+        text-align: left;
+      }
+
+      a {
+        display: inline-block;
+        margin: 16px 0px;
+        padding-bottom: 4px;
+        text-decoration: none;
+        color: $color-gradient-end;
+        border-bottom: 1px solid $color-gradient-end;
+        transition: $time-transition;
+
+        svg {
+          margin-bottom: -3px;
+
+          .circle {
+            fill: $color-gradient-end;
+          }
+
+          g path {
+            fill: $color-main;
+          }
+        }
+      }
+    }
+  }
+}
+
+main.dark .fm-works-section {
+  background-color: $color-main-dark;
+
+  .fm-caption a {
+    color: $color-gradient-start;
+    border-bottom-color: $color-gradient-start;
+
+    svg {
+      .circle {
+        fill: $color-gradient-start;
+      }
+
+      g path {
+        fill: $color-main-dark;
+      }
+    }
+  }
+}

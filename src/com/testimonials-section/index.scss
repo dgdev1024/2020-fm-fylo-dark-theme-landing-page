@@ -1,0 +1,27 @@
+@import "../../global.scss";
+
+.fm-testimonials-section {
+  padding: 32px 0px 128px;
+  background-color: $color-main;
+  transition: $time-transition;
+
+  .fm-container {
+    padding: 32px 0px;
+    background-image: url("../../img/bg-quotes.png");
+    background-repeat: no-repeat;
+    background-size: 48px 48px;
+    background-position: top left;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 32px;
+
+    @media #{$screen-large} {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+}
+
+main.dark .fm-testimonials-section {
+  background-color: $color-main-dark;
+}
