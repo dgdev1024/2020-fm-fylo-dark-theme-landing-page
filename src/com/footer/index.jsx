@@ -13,15 +13,15 @@ const Footer = () => (
         It only takes a minute to sign up and our free starter tier is extermely
         generous. If you have any questions, our support team would be happy to
         help you.
-        <div className="fm-form">
-          <input
-            type="email"
-            aria-label="Email Address"
-            placeholder="email@example.com"
-          />
-          <button className="fm-call-to-action">Get Started For Free</button>
-        </div>
       </p>
+      <div className="fm-form">
+        <input
+          type="email"
+          aria-label="Email Address"
+          placeholder="email@example.com"
+        />
+        <button className="fm-call-to-action">Get Started For Free</button>
+      </div>
     </div>
     <div className="fm-container">
       <div className="fm-logo">

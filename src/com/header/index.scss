@@ -9,6 +9,7 @@ header {
   background-color: $color-header;
   transition-property: background-color;
   transition-duration: $time-transition;
+  z-index: 1;
 
   @media #{$screen-small} {
     height: 72px;
